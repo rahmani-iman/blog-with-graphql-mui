@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'Yekan';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/YekanBakh-Regular.woff') format(woff);
+}
+@font-face {
+  font-family: 'Yekan';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/YekanBakh-Bold.woff') format(woff);
+}
+body {
+  font-family: 'Yekan';
+}
