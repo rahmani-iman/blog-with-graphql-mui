@@ -6,14 +6,14 @@ import { Link } from 'react-router-dom';
 const CardEL = (props) => {
 
     const {title, slug, coverPhoto, author} = props;
-    console.log(author.avatar.url)
     return (
     <Card sx={{ maxWidth: 345, boxShadow: "rgba(0, 0, 0, 0.1) 0 4px 12px", borderRadius: "8px" }}>
-        <CardHeader
-            avatar={
-            <Avatar sx={{ marginLeft : 2 }} src={author.avatar.url}></Avatar>}
-            title={<Typography component="p" variant="p" color="text.primary">{author.name}</Typography>}
-        />
+        {author && 
+            <CardHeader
+                avatar={
+                <Avatar sx={{ marginLeft : 2 }} src={author.avatar.url}></Avatar>}
+                title={<Typography component="p" variant="p" color="text.primary">{author.name}</Typography>}
+        />}
         <CardMedia
             component="img"
             height="194"
